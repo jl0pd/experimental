@@ -9,8 +9,8 @@ install:
   - pip install pytest pytest-cov codecov
 
 script:
-#  - coverage run tests/test_main.py
+  - coverage run tests/test_main.py
   - pytest --cov=./
 
 after_success:
-  - codecov
+  - codecov -t the-repository-upload-token
