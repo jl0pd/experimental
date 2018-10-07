@@ -10,7 +10,7 @@ install:
   - pip install pytest pytest-cov
 
 script:
-  - coverage run tests.py
+  - coverage run tests/test_main.py
   - pytest --cov=./
 
 after_success:
